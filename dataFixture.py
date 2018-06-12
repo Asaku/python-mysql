@@ -45,7 +45,6 @@ def initTables(cursor):
     cursor.execute("""TRUNCATE TABLE utilisateur""")
     cursor.execute("""TRUNCATE TABLE utilisateur_groupe""")
     cursor.execute("""SET FOREIGN_KEY_CHECKS=1""")
-
     return cursor
 
 cursor = initTables(cursor)
